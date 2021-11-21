@@ -1,8 +1,9 @@
 # **레이아웃 구현 프로젝트 - 2**  
 ## HTML과 CSS만을 이용한 별점 동적 구현  
-
+![페이지 레이아웃](./src/img/캡쳐화면.JPG)  
 ### markup 작성법  
 semantic한 markup 작성을 위해 div, span 사용을 지양하였고 각 box에 알맞게 태그를 사용.  
+![Layout rough section](./src/img/rough_section.png)  
 - img element를 rating-tab의 자식요소로 포함, position absolute를 이용해 바깥으로 벗어나도록 style.  
 - rating-info 역시 position absolute를 이용해 위치 조정.  
 - ul > li 를 이용한 장르, 연령 고지 정보 전달.  
@@ -11,6 +12,7 @@ semantic한 markup 작성을 위해 div, span 사용을 지양하였고 각 box�
 - 0.5단위의 별점을 위해 rating action 영역은 10칸으로 구분.  
 - 별점 reset 버튼 역시 img로 style.  
 
+![mouse hover animation](./src/img/Animation.gif)
 ### css 작성법  
 - chckbx와 rating-form 영역 input은 모두 label을 이용해 style.
 - 마우스 hover시 반응하도록 css 작성  
