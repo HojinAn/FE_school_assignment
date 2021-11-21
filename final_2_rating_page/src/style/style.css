@@ -1,0 +1,154 @@
+/* util */
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
+/* layout */
+body {
+    background: #E5E5E5;
+}
+    
+#main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.rating-tab {
+    position: relative;
+    width: 608px;
+    height: 500px;
+    background: #333333;
+    border-radius: 15px;
+}
+
+/* 이미지 설정 */
+.rating-tab .cont-img {
+    position: absolute;
+    width: 281px;
+    left: -64px;
+    top: 52px;
+    border-radius: 10px;
+}
+
+/* 정보 텍스트 영역 */
+.rating-tab .cont-info {
+    position: absolute;
+    top: 64px;
+    left: 262px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 고지 정보 */
+.rating-tab .cont-info .notice {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 23px;
+    color: #BDBDBD;
+    overflow: hidden;
+}
+
+.cont-info .notice .genre {
+    float: left;
+}
+.cont-info .notice .genre::after {
+    content: "ㅣ";
+}
+
+.cont-info .notice .age-rate {
+    float: right;
+}
+
+/* 타이틀 */
+.cont-info .cont-tit {
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+/* 좋아요, 하트 박스 */
+.cont-info .chckbx-wrap {
+    margin-top: 114px;
+}
+.cont-info .chckbx-wrap .labl-like,
+.cont-info .chckbx-wrap .labl-hrt {
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+.cont-info .chckbx-wrap .labl-like {
+    background: no-repeat center/48% url("../img/icon_thumbs_up.png");
+}
+.cont-info .chckbx-wrap .labl-hrt {
+    margin-left: 20px;
+    background: no-repeat center 58%/48% url("../img/icon_heart.png");
+}
+.cont-info .chckbx-wrap .labl-like:hover,
+.cont-info .chckbx-wrap .labl-like.on {
+    background: no-repeat center/48% url("../img/icon_thumbs_up_fill.png") #2F80ED;
+}
+.cont-info .chckbx-wrap .labl-hrt:hover,
+.cont-info .chckbx-wrap .labl-hrt.on {
+    background: no-repeat center 58%/48% url("../img/icon_heart_fill.png") #EB5757;
+}
+
+/* 별점 정보 */
+.cont-info .rating-avg {
+    display: block;
+    margin-top: 22px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #F2F2F2;
+}
+
+.cont-info .rating-form {
+    margin-top: 16px;
+    display: flex;
+}
+.cont-info .rating-info {
+    display: flex;
+}
+.cont-info .rating-info label[class^="star"] {
+    display: inline-block;
+    cursor: pointer;
+    width: 26px;
+    height: 51px;
+    border: none;
+    box-sizing: border-box;
+}
+.cont-info .rating-info label:nth-child(odd) {
+    background: no-repeat center/101% url("../img/icon_empty_star_left.png");
+}
+.cont-info .rating-info label:nth-child(even) {
+    background: no-repeat center/101% url("../img/icon_empty_star_right.png");
+}
+.cont-info .rating-info:hover label:nth-child(odd) {
+    background: no-repeat center/101% url("../img/icon_star_left.png");
+}
+.cont-info .rating-info:hover label:nth-child(even) {
+    background: no-repeat center/101% url("../img/icon_star_right.png");
+}
+.cont-info .rating-info label:hover~label:nth-child(odd) {
+    background: no-repeat center/101% url("../img/icon_empty_star_left.png");
+}
+.cont-info .rating-info label:hover~label:nth-child(even) {
+    background: no-repeat center/101% url("../img/icon_empty_star_right.png");
+}
+
+.cont-info .btn-reset {
+    margin-left: 11px;
+}
