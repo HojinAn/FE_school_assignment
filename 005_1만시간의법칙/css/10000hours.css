@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'OTEnjoystoriesBA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* font */
 @font-face {
     font-family: 'GmarketSansBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
@@ -27,7 +21,152 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
-.title img {
-    width: 100%;
-    height: 100%;
+/* utility */
+.newline {
+    display: block;
+}
+
+strong {
+    font-family: GmarketSansBold;
+}
+
+/* style */
+html {
+    font-size: 14px;
+    font-family: GmarketSansMedium;
+    background-color: #5b2386;
+    color: white;
+    text-align: center;
+}
+/* header */
+header {
+    padding-top: 3.6rem;
+}
+.tit-page {
+    position: relative;
+}
+.tit-page .img-tit {
+    width: 19rem;
+}
+.tit-page::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8rem;
+    height: 8rem;
+    background: no-repeat center/8rem 8rem url("../img/clock.png");
+}
+/* main */
+main {
+    margin-top: 4.9rem;
+}
+
+.sub-tit .img-sub {
+    max-width: 21.2rem;
+}
+
+/* description */
+.txt-desc {
+    position: relative;
+    margin-top: 4.4rem;
+    line-height: 2rem;
+}
+.txt-desc::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 21.6rem;
+    height: 3.4rem;
+    background: no-repeat center/21.6rem url("../img/quotes.png");
+}
+
+/* form */
+.cont-inp {
+    margin-top: 4.4rem;
+    line-height: 3rem;
+}
+
+.cont-inp input {
+    text-align: center;
+    padding: 0;
+    width: 11.2rem;
+    height: 2.6rem;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    color: #BABCBE;
+}
+
+.cont-inp .btn-exc {
+    position: relative;
+    margin-top: 3.5rem;
+    padding: 1.3rem 2.6rem;
+    width: 17.2rem;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #5B2386;
+    border-radius: 13px;
+}
+.cont-inp .btn-exc::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3.3rem;
+    top: 2.6rem;
+    left: 18rem;
+    background: no-repeat center/3rem 3.3rem url("../img/click.png");
+}
+
+/* result */
+.cont-result {
+    margin-top: 4.5rem;
+    line-height: 2rem;
+}
+
+.cont-result [class^="txt"] strong {
+    font-size: 1.7rem;
+    margin: 0 0.6rem;
+}
+
+.cont-result .btn-go, 
+.cont-result .btn-share {
+    margin-top: 3.9rem;
+    padding: 0.9rem 1.3rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #5B2386;
+    border-radius: 56px;
+    font-family: GmarketBold;
+}
+.cont-result .btn-go {
+    background-color: #FCEE21;
+    margin-right: 0.9rem;
+}
+.cont-result .btn-share {
+    background-color: #FFFFFF;
+}
+
+/* footer */
+footer {
+    margin-top: 5.9rem;
+    padding-bottom: 2.3rem;
+}
+
+.img-footer {
+    width: 6.5rem;
+    margin-bottom: 1.2rem;
+}
+footer [class^="txt"] {
+    font-family: Noto Sans KR;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }
